@@ -3,6 +3,10 @@ import { Server } from 'socket.io';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 const SocketHandler = (req: NextApiRequest, res: any) => {
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Allow requests from any origin
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Allow specific HTTP methods
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+
   if (res.socket.server.io) {
     console.log('Socket is already attached');
     return res.end();
