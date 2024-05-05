@@ -11,7 +11,7 @@ export default function Home() {
   }
 
   return (
-    <div className='min-h-screen flex items-center justify-center bg-gray-100'>
+    <div className='min-h-screen flex items-center justify-center bg-[#72fb9e]'>
       <Head>
         <title>Native WebRTC API with NextJS</title>
         <meta name="description" content="Use Native WebRTC API for video conferencing" />

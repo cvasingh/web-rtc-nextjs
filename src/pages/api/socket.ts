@@ -12,7 +12,9 @@ const SocketHandler = (req: NextApiRequest, res: any) => {
     return res.end();
   }
 
-  const io = new Server(res.socket.server);
+  const io = new Server(res.socket.server, {
+    path: '/socket.io',
+  });
   res.socket.server.io = io;
 
   io.on("connection", (socket) => {
