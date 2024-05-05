@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main className='max-w-md p-4 bg-white rounded-lg shadow-md'>
-        <h1 className='text-2xl font-bold mb-4'>Let's join a room!</h1>
+        <h1 className='text-2xl font-bold mb-4'>Let`s join a room!</h1>
         <input
           type="text"
           onChange={(e) => setRoomName(e.target.value)}
